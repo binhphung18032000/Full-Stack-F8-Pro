@@ -279,16 +279,18 @@ a {
 
 .featured .list {
     display: flex;
-    column-gap: 30px;
+    gap: 30px;
     margin-top: 70px;
 }
 
 .featured .item {
+    flex: 1;
     border-radius: 12px;
+    background-color: #ffffff;
 }
 
 .featured .item .thumb {
-    width: 350px;
+    width: 100%;
     height: 227px;
     object-fit: cover;
     border-top-left-radius: 12px;
@@ -296,8 +298,7 @@ a {
 }
 
 .featured .item .body {
-    padding: 17px 20px 22px;
-    background-color: #ffffff;
+    padding: 17px 20px 24px;
 }
 
 .featured .item .title {
@@ -311,7 +312,7 @@ a {
     margin-top: 11px;
     font-weight: 500;
     font-size: 1.4rem;
-    line-height: 1;
+    line-height: 1.5;
     color: #a3a6ab;
 }
 
@@ -333,6 +334,6 @@ a {
     margin-left: 8px;
     font-weight: 500;
     font-size: 1.4rem;
-    letter-spacing: 1%;
+    letter-spacing: 0.01em;
     color: #4d4d52;
 }
