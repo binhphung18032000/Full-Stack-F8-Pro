@@ -48,8 +48,14 @@ function battle(char1, char2) {
 
         if (char1.speed > char2.speed) {
             battleRound(char1, char2);
-        } else {
+        } else if (char1.speed < char2.speed) {
             battleRound(char2, char1);
+        } else {
+            if (Math.random() > 0.5) {
+                battleRound(char1, char2);
+            } else {
+                battleRound(char2, char1);
+            }
         }
 
         round++;
@@ -62,7 +68,7 @@ function battle(char1, char2) {
 
 // Tạo 2 nhân vật để tham gia trận chiến
 const tom = new Character("Tom", 1000, 50, 5, 30, 0.5);
-const jerry = new Character("Jerry", 500, 20, 20, 10, 0.2);
+const jerry = new Character("Jerry", 500, 20, 20, 30, 0.2);
 
 // console.log("tom: ", tom);
 // console.log("jerry: ", jerry);
