@@ -367,6 +367,10 @@ a {
     width: 50%;
 }
 
+.stats .block-img {
+    position: relative;
+}
+
 .stats .info {
     padding: 79px 0 0 165px;
 }
@@ -401,11 +405,48 @@ a {
     background-color: #000339;
 }
 
-.stats .desc {
+.stats .info .desc {
     margin-top: 20px;
     width: 309px;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.88;
     color: #5a6473;
+}
+
+/* Stats trend */
+.stats-trend {
+    background-color: #ffffff;
+    /* background-color: orange; */
+    position: absolute;
+    width: 239px;
+    left: 0;
+    top: 0;
+    padding: 45px 22px 40px;
+    border-radius: 0 0 12px 12px;
+}
+
+.stats-trend .value {
+    font-weight: 700;
+    font-size: 2.6rem;
+    letter-spacing: 1%;
+    color: #000339;
+}
+
+.stats-trend .icon {
+    margin-left: auto;
+}
+
+.stats-trend .desc {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #a7a7a7;
+}
+
+.stats-trend .separate {
+    margin-top: 25px;
+    height: 1.2px;
+    background-color: #e9e9e9;
 }
