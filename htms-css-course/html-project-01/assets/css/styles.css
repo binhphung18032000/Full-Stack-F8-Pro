@@ -449,3 +449,32 @@ a {
     height: 1px;
     background-color: #e9e9e9;
 }
+
+.avatar-block {
+    margin-top: 26px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 14px;
+}
+
+.avatar-block .avatar-group {
+    display: flex;
+}
+
+.avatar-block .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-block .avatar-b {
+    font-weight: 450;
+    font-size: 0.7rem;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
