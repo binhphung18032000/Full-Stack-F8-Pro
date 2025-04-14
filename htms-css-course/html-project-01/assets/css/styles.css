@@ -470,11 +470,9 @@ a {
     height: 16px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.avatar-block .avatar-b {
     font-weight: 450;
     font-size: 0.7rem;
     letter-spacing: -0.02em;
     color: #ffffff;
+    background-color: var(--bg-color, #000000);
 }
